@@ -28,11 +28,28 @@ namespace Pluralsight_Algorithms_and_Data_Structures_p_1
             myList.AddLast("Håkan");
             Console.WriteLine(myList.Count);
 
+
             foreach (var item in myList)
             {
                 Console.WriteLine(item);
             }
 
+            myList.Remove("Dan");
+
+            foreach (var item in myList)
+            {
+                Console.WriteLine(item);
+            }
+
+            myList.Clear();
+
+            if (myList.Count < 1)
+                Console.WriteLine("List is empty");
+            else
+            foreach (var item in myList)
+            {
+                Console.WriteLine(item);
+            }
 
 
         }
